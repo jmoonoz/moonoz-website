@@ -9,12 +9,13 @@ body{
   position: relative;
   background-color: #121212 !important;
   color: #fff !important;
+  justify-content: center;
 }
 
 
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  /* max-width: 1280px; */
+  /* margin: 0 auto; */
+  /* padding: 2rem;
+  text-align: center; */
 }
