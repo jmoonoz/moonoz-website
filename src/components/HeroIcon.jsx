@@ -2,13 +2,17 @@ import React from 'react'
 import styled from 'styled-components'
 
 const IconStyled = styled.div`
-    svg{
-        width: 30px;
-        height: 30px;
-        color: #610e15;
-    }
+   a{ 
+    color: #DA3849;
+   } 
+   svg{
+            width: 30px;
+            height: 30px;
+            color: ##DA3849;
+            transform: rotate(-90deg);
+        }
     svg:hover{
-        color: #610e99;
+        color: #DA3849;
     }
 
 `

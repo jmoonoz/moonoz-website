@@ -1,21 +1,16 @@
 import React from 'react'
 import { Button, Col, Container, Row } from 'react-bootstrap'
-import HeroIcon from './HeroIcon'
-import { FaLinkedinIn } from 'react-icons/fa'
-import { GrInstagram } from 'react-icons/gr'
-import { AiFillGithub } from 'react-icons/ai'
+import Btn from './Btn'
 import styled from 'styled-components'
+import SocialMenu from './SocialMenu'
 import { useState, useEffect } from 'react'
 
 const HeroStyled = styled.div`
-    .icon-align{
-        width: 75%;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        justify-content: space-around;
-        ${'' /* margin: 0 1rem; */}
-    }
+    .line-height-space{
+        line-height: 3.5;
+        
+    }   
+    
     .hero-Name{
         display: flex;
         flow-direction: row;
@@ -26,6 +21,17 @@ const HeroStyled = styled.div`
     }
     .col{
         justify-content: center;
+    }
+    .btn-alignment{
+        width: 50%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        justify-content: space-around;
+    }
+    .container{
+        ${'' /* display: flex; */}
+        align-items: center;
     }
 `
 
@@ -75,21 +81,24 @@ export default function Hero() {
     return (
         <HeroStyled>
             {/* <section > */}
+            <SocialMenu />
             <Container className="hero-section" id="Home" >
+
                 <Row className='align-items-center'>
-                <Col xs={0} md={1} xl={1}></Col>
-                    <Col xs={12} md={6} xl={7}>
-                        <div className='icon-align '>
-                            <HeroIcon icon={<FaLinkedinIn />} link='https://www.linkedin.com/in/moonoz/' />
-                            <HeroIcon icon={<AiFillGithub />} link='https://github.com/jmoonoz' />
-                            <HeroIcon icon={<GrInstagram />} link='https://www.instagram.com/moonozdisenoz/' />
-                        </div>
+                    {/* extra col for spacing */}
+                    <Col xs={0} md={1} xl={1}></Col>
+                    <Col xs={12} md={6} xl={7} className="line-height-space">
+
                         <div className="hero-Name">
                             <h1>{`Im Joel Muñoz`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
                             <div className="vr" />
                         </div>
                         <p>djlk alsdkjf lakjdf</p>
-                        <Button variant="danger">Danger</Button>
+                        <div className="btn-alignment">
+                            <Btn variant="danger" text="About Me" />
+                            <Btn variant="light" text="Hire Me" />
+                        </div>
+                        {/* <Button variant="danger">Danger</Button> */}
                     </Col>
                     <Col xs={12} md={4} xl={4}>
                         col 2
