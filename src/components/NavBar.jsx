@@ -34,9 +34,9 @@ export default function NavBar() {
                     Moonoz
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" >
-                    <span className="navbar-toggle-icon">
+                    {/* <span className="navbar-toggle-icon">
 
-                    </span>
+                    </span> */}
                 </Navbar.Toggle>
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="ms-auto">
