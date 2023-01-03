@@ -6,21 +6,25 @@ import SocialMenu from './SocialMenu'
 import { useState, useEffect } from 'react'
 
 const HeroStyled = styled.div`
-    .line-height-space{
-        line-height: 3.5;
-        
+    .center-items{
+        margin: 0 auto; 
+    }
+    .left-Col{
+        line-height: 5;  
     }   
     
     .hero-Name{
         display: flex;
         flow-direction: row;
+        text-align: center;
     }
     .hero-section{
         margin-top: 0;
         padding: 260px 0 100px 0;
     }
-    .col{
-        justify-content: center;
+    .hero-text{
+        padding: 0 10px;
+        margin: 0 auto;
     }
     .btn-alignment{
         width: 50%;
@@ -28,10 +32,6 @@ const HeroStyled = styled.div`
         flex-direction: row;
         justify-content: center;
         justify-content: space-around;
-    }
-    .container{
-        ${'' /* display: flex; */}
-        align-items: center;
     }
 `
 
@@ -84,21 +84,22 @@ export default function Hero() {
             <SocialMenu />
             <Container className="hero-section" id="Home" >
 
-                <Row className='align-items-center'>
+                <Row className=''>
                     {/* extra col for spacing */}
                     <Col xs={0} md={1} xl={1}></Col>
-                    <Col xs={12} md={6} xl={7} className="line-height-space">
-
-                        <div className="hero-Name">
-                            <h1>{`Im Joel Muñoz`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
+                    <Col xs={12} md={6} xl={7} className="left-Col" centered>
+                        <div className="hero-Name text-center">
+                            <h1>Hey, I'm Joel Muñoz</h1>
+                            {/* <h1>{`Im Joel Muñoz`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1> */}
                             <div className="vr" />
                         </div>
-                        <p>djlk alsdkjf lakjdf</p>
-                        <div className="btn-alignment">
+                        <div className="text-center">
+                            <p>Creative Front End Web Developer with 5+ years experince.</p>
+                        </div>
+                        <div className="btn-alignment center-items">
                             <Btn variant="danger" text="About Me" />
                             <Btn variant="light" text="Hire Me" />
                         </div>
-                        {/* <Button variant="danger">Danger</Button> */}
                     </Col>
                     <Col xs={12} md={4} xl={4}>
                         col 2
