@@ -9,7 +9,7 @@ const HeroAboutStyled = styled.div`
 export default function HomeAbout() {
     return (
         <HeroAboutStyled>
-            <TopSectionDivider />
+            {/* <TopSectionDivider /> */}
             <div>HeroAbout</div>
         </HeroAboutStyled>
 

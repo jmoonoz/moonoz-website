@@ -4,19 +4,18 @@ import styled from 'styled-components'
 
 const BtnStyled = styled.div`
     .btn{
-        border-radius: 30px;
         padding-right: 30px;
         padding-left: 30px;
     }   
     .btn-light{
-        color: #DA3849;
+       
     }
 `
 
-export default function Btn({ variant, text }) {
+export default function Btn({ variant, text, link }) {
     return (
         <BtnStyled>
-            <Button variant={variant} >
+            <Button variant={variant} href={link} >
                 {text}
             </Button>
         </BtnStyled>

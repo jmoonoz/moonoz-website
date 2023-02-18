@@ -89,16 +89,18 @@ export default function Hero() {
                     <Col xs={0} md={1} xl={1}></Col>
                     <Col xs={12} md={6} xl={7} className="left-Col" centered>
                         <div className="hero-Name text-center">
-                            <h1>Hey, I'm Joel Muñoz</h1>
+                            <h6>Hi, I'm</h6>
+                            
                             {/* <h1>{`Im Joel Muñoz`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1> */}
                             <div className="vr" />
                         </div>
+                        <h1>Joel Muñoz</h1>
                         <div className="text-center">
                             <p>Creative Front End Web Developer with 5+ years experince.</p>
                         </div>
                         <div className="btn-alignment center-items">
-                            <Btn variant="danger" text="About Me" />
-                            <Btn variant="light" text="Hire Me" />
+                            <Btn variant="outline-danger" text="About Me" link="/About" />
+                            <Btn variant="outline-light" text="Hire Me" link="/" />
                         </div>
                     </Col>
                     <Col xs={12} md={4} xl={4}>
