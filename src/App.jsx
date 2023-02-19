@@ -7,6 +7,7 @@ import {
 } from 'react-router-dom'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './style/App.css'
+import SocialMenu from './components/SocialMenu'
 import About from './pages/About'
 import Home from './pages/Home'
 import Projects from './pages/Projects';
@@ -19,6 +20,7 @@ function App() {
   return (
     <Router>
       <NavBar />
+      <SocialMenu />
       <Routes>
         <Route path="/Projects" element={<Projects />}></Route>
         <Route path="/Contact" element={<Contact />}></Route>

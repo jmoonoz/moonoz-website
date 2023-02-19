@@ -12,14 +12,15 @@ const SocialMenuStyled = styled.div`
         display: flex;
         flex-direction: column;
         left: 50px;
-        top: 250px;
+        top: 65%;
         height: 260px;
         justify-content:space-around;
         align-items:center;
         z-index: 1;
         img{
-                max-height: 45px;
-                width: 16px;
+                color: #cacaca;
+                height: 80px;
+                rotate: 180deg;
             }
     }
 
@@ -29,10 +30,10 @@ export default function SocialMenu() {
     return (
         <SocialMenuStyled >
             <div className='icon-align'>
-                <img src={SocialMediaArrow} alt="social media arrow"></img>
                 <HeroIcon icon={<FaLinkedinIn />} link='https://www.linkedin.com/in/moonoz/' />
                 <HeroIcon icon={<AiFillGithub />} link='https://github.com/jmoonoz' />
                 <HeroIcon icon={<GrInstagram />} link='https://www.instagram.com/moonozdisenoz/' />
+                <img src={SocialMediaArrow} alt="social media arrow"></img>
             </div>
         </SocialMenuStyled>
 

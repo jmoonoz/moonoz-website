@@ -2,7 +2,7 @@ import React from 'react'
 import { Button, Col, Container, Row } from 'react-bootstrap'
 import Btn from './Btn'
 import styled from 'styled-components'
-import SocialMenu from './SocialMenu'
+
 import { useState, useEffect } from 'react'
 
 const HeroStyled = styled.div`
@@ -81,7 +81,7 @@ export default function Hero() {
     return (
         <HeroStyled>
             {/* <section > */}
-            <SocialMenu />
+            
             <Container className="hero-section" id="Home" >
 
                 <Row className=''>
