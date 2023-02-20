@@ -81,7 +81,6 @@ export default function Hero() {
     return (
         <HeroStyled>
             {/* <section > */}
-            
             <Container className="hero-section" id="Home" >
 
                 <Row className=''>

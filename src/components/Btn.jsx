@@ -10,6 +10,7 @@ const BtnStyled = styled.div`
     .btn-light{
        
     }
+    
 `
 
 export default function Btn({ variant, text, link }) {
