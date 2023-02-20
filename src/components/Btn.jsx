@@ -6,11 +6,7 @@ const BtnStyled = styled.div`
     .btn{
         padding-right: 30px;
         padding-left: 30px;
-    }   
-    .btn-light{
-       
-    }
-    
+    }    
 `
 
 export default function Btn({ variant, text, link }) {
