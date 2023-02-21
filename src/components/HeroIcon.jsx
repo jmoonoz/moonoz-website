@@ -63,7 +63,7 @@ const IconStyledTwo = styled.div`
    a:hover {
     color: #DA3849;
     transform: translateY(-8px);
-    transition: 0.3s ease-out;
+    transition: 0.1s ease-out;
    }
     svg{
      width: 25px;
@@ -77,7 +77,7 @@ export default function HeroIcon({ icon, link }) {
     return (
         <IconStyledTwo>
             <a href={link} target="_blank">
-                <div class="hero-icon-item">
+                <div className="hero-icon-item">
                     {icon}
                 </div>
             </a>

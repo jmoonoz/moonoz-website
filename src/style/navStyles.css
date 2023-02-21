@@ -10,8 +10,7 @@ nav.navbar {
   }
 
 nav.navbar.scrolled {
-    padding: 0px 0;
-    background-color: #121212;
+    /* padding: 0px 0; */
   }
 
 nav.navbar .navbar-nav .nav-link.navbar-link {
