@@ -21,7 +21,7 @@ const HeroStyled = styled.div`
   .hero-section {
     margin-top: 0;
     padding: 260px 0 100px 0;
-    height: 100vh;
+    height: 110vh;
   }
   .hero-text {
     padding: 0 10px;

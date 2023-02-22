@@ -63,7 +63,7 @@ const IconStyledTwo = styled.div`
    a:hover {
     color: #DA3849;
     transform: translateY(-8px);
-    transition: 0.1s ease-out;
+    transition: 0.2s ease-out;
    }
     svg{
      width: 25px;

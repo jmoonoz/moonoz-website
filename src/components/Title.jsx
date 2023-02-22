@@ -8,6 +8,12 @@ const TitleStyled = styled.div`
     opacity: 0.9;
     clamp(26px,5vw,32px)
   }
+  .title-name:after{
+    width: 100%;
+    border-bottom: 1px solid;
+    color: #cacaca;
+    opacity: 0.75;
+  }
 `;
 
 function Title({ sectionTitle }) {
