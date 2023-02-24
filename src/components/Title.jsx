@@ -3,10 +3,11 @@ import styled from "styled-components";
 
 const TitleStyled = styled.div`
   .title-name {
+    flex-direction: row;
     color: #fff;
     font-weight: 600;
     opacity: 0.9;
-    clamp(26px,5vw,32px)
+    font-size: clamp(26px,5vw,32px);
   }
   .title-name:after{
     width: 100%;

@@ -2,8 +2,8 @@ import React from "react";
 import { Button, Col, Container, Row } from "react-bootstrap";
 import Btn from "./Btn";
 import styled from "styled-components";
+import PText from './PText'
 
-import { useState, useEffect } from "react";
 
 const HeroStyled = styled.div`
   .center-items {
@@ -45,11 +45,17 @@ const HeroStyled = styled.div`
     font-size: clamp(var(--fz-sm), 5vw, var(--fz-md));
     opacity: 0.95;
   }
-  p {
-    line-height: 1.5;
-    width: 65%;
-    font-weight: 200;
+  @media only screen and (max-width: 768px) {
+    .btn-alignment{
+      display: flex;
+      flex-direction: column;
+      // align-content: stretch;
+      // justify-content: center;
+      align-items: center;
+    }
   }
+
+  
 `;
 
 export default function Hero() {
@@ -59,19 +65,19 @@ export default function Hero() {
       <Container className="hero-section" id="Home">
         <Row className="">
           {/* extra col for spacing */}
-          <Col xs={0} md={2} xl={1}></Col>
-          <Col xs={12} md={5} xl={7} className="left-Col" >
+          <Col xs={1} md={2} xl={1}></Col>
+          <Col xs={11} md={5} xl={7} className="left-Col" >
             <div className="hero-Name">
-              <h6>Hola, I'm </h6>
+              <h6>Hey! I'm </h6>
               {/* <div className="vr" /> */}
             </div>
             <h1 className="name">Joel Muñoz</h1>
             <h1>Software Engineer / Graphic Designer</h1>
-            <p>
+            <PText>
               Creative software engineer with heavy experience as a Front End
               Web Developer. I enjoy creating digital art from writing
               scriptures to modifying the perfect node curve.
-            </p>
+            </PText>
             <div className="btn-alignment">
               <Btn variant="outline-danger" text="About Me" link="/About" />
               <Btn variant="outline-light" text="Hire Me" link="/" />
