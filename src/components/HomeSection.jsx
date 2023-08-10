@@ -14,13 +14,11 @@ function HomeSection({ pageName, pageLink, bodyText }) {
     <HomeSectionStyled>
       <Container>
         <Row>
-          <Col xs={1} md={2} xl={1.5}></Col>
           <Col xs={10} md={6} xl={4}>
             <TitleSection titleName={pageName} />
             <PText>{bodyText}</PText>
             <Btn variant="outline-light" text={pageName} link={pageLink} />
           </Col>
-          <Col xs={1} md={2} xl={6}></Col>
         </Row>
       </Container>
     </HomeSectionStyled>

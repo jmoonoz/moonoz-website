@@ -1,99 +1,60 @@
-  
-  .center-items {
-    margin: 0 auto;
-  }
-  .left-Col {
-    line-height: 5;
-  }
+.hero {
+  position: relative;
+  height: 100vh;
+}
+.hero .slide {
+  height: 100vh;
+  position: relative;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.hero .slide {
+  display: none;
+}
 
-  .hero-Name {
-    display: flex;
-    flow-direction: row;
-    text-align: center;
-  }
-  .hero-section {
-    margin-top: 0;
-    padding: 260px 0px 100px;
-    height: 110vh;
-  }
-  .hero-text {
-    padding: 0 10px;
-    margin: 0 auto;
-  }
-  .btn-alignment {
-    width: 50%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    justify-content: space-around;
-  }
-  .name {
-    color: #fff;
-    font-weight: 600;
-    font-size: clamp(40px, 8vw, 80px);
-  }
-  h6 {
-    font-family: var(--font-mono);
-    font-weight: 400;
-    font-size: clamp(var(--fz-sm), 5vw, var(--fz-md));
-    opacity: 0.95;
-  }
-  .hero .slide-caption > div {
-    overflow: hidden;
-  }
-  .hero .hero-slider .slick-current .slider-image {
-    -webkit-animation: kenburn 25s 2s alternate infinite;
-    -animation: kenburn 25s 2s alternate infinite;
-  }
-  .hero .slide-caption {
-    padding-top: 90px;
-  }
+.hero .slide:focus {
+  outline: none;
+}
 
-  .hero .slide-caption > div * {
-    -webkit-animation: fadeInLeft 1.5s both;
-    animation: fadeInLeft 1.5s both;
-  }
+.hero .slide .slider-image {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
 
-  .hero .slide-caption > div.slide-title * {
-    -webkit-animation-delay: 0s;
-    animation-delay: 0s;
-  }
+.hero .slide .container {
+  height: 100%;
+  display: table;
+  position: relative;
+  z-index: 2;
+}
 
-  .hero .slide-caption > div.slide-subtitle * {
-    -webkit-animation-delay: 0s;
-    animation-delay: 0s;
-  }
+.hero .slide .row {
+  display: table-cell;
+  vertical-align: middle;
+}
 
-  .hero .slide-caption > div.btns * {
-    -webkit-animation-delay: 0s;
-    animation-delay: 0s;
-  }
-
-  .hero .hero-slider .slick-current .slide-caption > div * {
-    -webkit-animation-name: fadeOutLeft;
-    animation-name: fadeOutLeft;
-  }
-
-  .hero .hero-slider .slick-current .slide-caption > div.slide-title * {
-    -webkit-animation-delay: 0.5s;
-    animation-delay: 0.5s;
-  }
-
-  .hero .hero-slider .slick-current .slide-caption > div.slide-subtitle * {
-    -webkit-animation-delay: 1s;
-    animation-delay: 1s;
-  }
-
-  .hero .hero-slider .slick-current .slide-caption > div.btns * {
-    -webkit-animation-delay: 1.5s;
-    animation-delay: 1.5s;
-  }
-  @media only screen and (max-width: 768px) {
-    .btn-alignment {
-      display: flex;
-      flex-direction: column;
-      align-content: stretch;
-      justify-content: center;
-      align-items: center;
-    }
-  }
+.hero-slider-wrapper{
+  position: relative;
+}
+.hero-slider-wrapper:before{
+  content: "";
+  position: absolute;
+  left: 18%;
+  top: 0;
+  width: 1px;
+  height: 100%;
+  background:rgba(102,102,102,.3);
+  z-index: 99;
+}
+.hero-slider-wrapper:after{
+  content: "";
+  position: absolute;
+  right: 18%;
+  top: 0;
+  width: 1px;
+  height: 100%;
+  background:rgba(102,102,102,.3);
+}

@@ -1,9 +1,16 @@
+/*---------------------------
+	Fonts
+----------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+
 html{
   scroll-behavior: smooth;
   scroll-padding-top: 75px;
 }
 
 body{
+  font-family: 'Lato', sans-serif !important;
   font-weight: 400;
   overflow-x: hidden;
   position: relative;
@@ -11,9 +18,13 @@ body{
   color: #cacaca !important;
   justify-content: center;
   padding: 0px 158px;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
 }
+
 .container{
-  width: 100%;
+  /* padding: 100px 0; */
+  /* width: 100%; */
 }
 
 #root {
