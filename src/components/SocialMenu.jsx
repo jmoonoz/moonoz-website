@@ -8,10 +8,11 @@ import { AiFillGithub } from "react-icons/ai";
 
 const SocialMenuStyled = styled.div`
   .icon-align {
+    z-index: 2px !important;
     position: fixed;
     display: flex;
     flex-direction: column;
-    left: 50px;
+    left: 30px;
     top: 65%;
     height: 260px;
     justify-content: space-around;

@@ -1,6 +1,6 @@
 import React from "react";
-import TopSectionDivider from "../components/TopSectionDivider";
-import HomeAbout from "../components/HomeAbout";
+import TopSectionDivider from "../Components/TopSectionDivider";
+import HomeAbout from "../Components/HomeAbout";
 import styled from "styled-components";
 
 const AboutStyled = styled.div`

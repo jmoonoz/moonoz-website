@@ -2,13 +2,116 @@
 	Fonts
 ----------------------------*/
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400&family=Lato:wght@300;400;700&family=Oswald:wght@200;300;400;500;600&display=swap');
 
-
-html{
+html {
   scroll-behavior: smooth;
   scroll-padding-top: 75px;
 }
 
+img {
+  max-width: 100%;
+}
+
+.owl-carousel .owl-item img {
+  width: auto;
+}
+
+/*---------------------------
+	text
+----------------------------*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Oswald", sans-serif;
+}
+
+
+
+h4 {
+  font-size: 18px;
+  font-size: 1.2rem;
+  font-weight: 300 !important;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  color: #fff;
+  margin: 0;
+  position: relative;
+}
+
+h2 {
+  font-size: 65px;
+}
+
+p {
+  color: #999;
+  line-height: 1.7em;
+}
+
+.home-about {
+  padding: 100px 0px;
+}
+
+.container {
+  max-width: 1110px;
+}
+
+.hx-site-title h2 {
+  font-size: 36px;
+  font-weight: 700 !important;
+  padding-bottom: 20px;
+  margin-bottom: 50px;
+  position: relative;
+  margin-top: 15px;
+
+}
+
+/*---------------------------
+	sections
+----------------------------*/
+section {
+  /* height: 100vh; */
+  /* min-height: 850px; */
+  max-height: 850px !important;
+  color: #fff;
+}
+
+.home-about {
+  background: #111;
+}
+
+.hx-about-img {
+  padding: 15px;
+  border: 1px solid #333;
+}
+
+.col-img{
+  padding-right: 0px !important;
+}
+.hx-site-title{
+  display: flexbox;
+  justify-content: space-between;
+}
+.hx-about-content{
+  display: flex;
+  align-items: center;
+}
+.col-about{
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* justify-content: left !important; */
+  align-items: center!important;
+}
+.about-line{
+  height: 1px;
+  width: 65px;
+  background-color: #333;
+}
+
+/* 
 body{
   font-family: 'Lato', sans-serif !important;
   font-weight: 400;
@@ -20,17 +123,4 @@ body{
   padding: 0px 158px;
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
-}
-
-.container{
-  /* padding: 100px 0; */
-  /* width: 100%; */
-}
-
-#root {
-  --font-mono: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
-  /* max-width: 1280px; */
-  /* margin: 0 auto; */
-  /* padding: 2rem;
-  text-align: center; */
-}
+} */

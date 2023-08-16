@@ -29,7 +29,7 @@ export default function NavBar() {
 
   return (
     <Navbar expand="md" fixed="top" className={scroll ? "scrolled" : ""}>
-      <Container>
+      <Container fluid>
         <Navbar.Brand href="/">Moonoz</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav">
           {/* <span className="navbar-toggle-icon">

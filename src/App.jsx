@@ -1,15 +1,17 @@
 import { useState } from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./style/App.css";
-import SocialMenu from "./components/SocialMenu";
+import "./Style/App.css";
+import "./Style/Responsive.css"
+import SocialMenu from "./Components/SocialMenu";
 import About from "./pages/About";
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
-import NavBar from "./components/NavBar";
-import Footer from "./components/Footer";
+import NavBar from "./Components/NavBar";
+import Footer from "./Components/Footer";
 import Blog from "./pages/Blog";
+
 
 function App() {
   return (
