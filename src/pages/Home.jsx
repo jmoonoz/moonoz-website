@@ -1,24 +1,24 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
-import Hero from "../components/Hero";
-import AboutPhoto from "../Images/about.png";
-import HomeAbout from "../Components/HomeAbout";
-import HomeProject from "../components/HomeProject";
-import HomeSection from "../components/HomeSection";
+import { Container, Row, Col, Button } from "react-bootstrap";
+import Hero from "../Components/Hero";
+import AboutPhoto from "../Images/Joel-disney.png";
+import Contact from "../Components/ContactSection";
+import Portfolio from "../Components/Portfolio";
+import ProjectSection from "../Components/ProjectSection";
 
 export default function Home() {
   return (
     <div>
       <Hero />
-      <section className="home-about" id="about">
+      {/* About */}
+      <section className="home-about" id="About">
         <Container>
           <Row className="justify-content-between">
-            <Col xl={6} lg={6} className="hx-about-content" >
+            <Col xl={6} lg={6} className="hx-about-content">
               <div className="col-about">
                 <div className="hx-site-title">
                   <span>Expert Web Developer & Designer</span>
-                  <h2>About Me</h2>
-                  <div className="about-line"></div>
+                  <h2 className="section-title">Get to Know Me</h2>
                 </div>
                 <p>
                   There are many variations of passages of Lorem Ipsum
@@ -35,9 +35,7 @@ export default function Home() {
                   repeat predefined chunks as necessary you need to be sure
                 </p>
                 <div className="btns">
-                  <a href="#" className="theme-btn">
-                    Download CV
-                  </a>
+                  <Button variant="outline-light">Download CV</Button>
                 </div>
               </div>
             </Col>
@@ -49,7 +47,22 @@ export default function Home() {
           </Row>
         </Container>
       </section>
-      <Container></Container>
+      {/* Services */}
+      <section id="Services">
+        <Container>
+          <div className="section-title-alignment">
+            <span>My Services</span>
+            <h2 className="section-title-center">The Ultimate Creative Techie</h2>
+          </div>
+          <Row>
+            <Col></Col>
+          </Row>
+        </Container>
+      </section>
+      {/* <Portfolio /> */}
+      <ProjectSection />
+      {/* Contact */}
+      <Contact />
     </div>
   );
 }

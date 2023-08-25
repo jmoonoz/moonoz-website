@@ -1,11 +1,7 @@
 import React from "react";
-import TopSectionDivider from "./TopSectionDivider";
 import styled from "styled-components";
 import { Container, Row, Col } from "react-bootstrap";
-import Title from "./Title";
-import Btn from "./Btn";
-import TitleSection from "./TitleSection";
-import PText from "./PText";
+
 
 const HeroAboutStyled = styled.div`
   .hero-Name {
@@ -20,26 +16,27 @@ const HeroAboutStyled = styled.div`
     margin-bottom: 5%;
     margin-left: 15px;
   }
-  
 `;
 
 export default function HomeAbout() {
   return (
-    <HeroAboutStyled>
-      <Container>
-        {/* <TopSectionDivider /> */}
-        <Row>
-          <Col xs={2} md={2} xl={2}></Col>
-          <Col xs={10} md={6} xl={4} >
-            <TitleSection titleName="About me" />
-            <PText>
-              Over 5+ years experince in software progrmaing and grapbhics
-              designs, I enjoy making the internet more fun!{" "}
-            </PText> 
-            <Btn variant="outline-light" text="About Me" link="/About" />
-          </Col>
-        </Row>
-      </Container>
-    </HeroAboutStyled>
+    <section id="About">
+      <HeroAboutStyled>
+        <Container>
+          {/* <TopSectionDivider /> */}
+          <Row>
+            <Col xs={2} md={2} xl={2}></Col>
+            <Col xs={10} md={6} xl={4}>
+              <TitleSection titleName="About me" />
+              <PText>
+                Over 5+ years experince in software progrmaing and grapbhics
+                designs, I enjoy making the internet more fun!{" "}
+              </PText>
+              <Btn variant="outline-light" text="About Me" link="/About" />
+            </Col>
+          </Row>
+        </Container>
+      </HeroAboutStyled>
+    </section>
   );
 }

@@ -8,7 +8,7 @@ import { AiFillGithub } from "react-icons/ai";
 
 const SocialMenuStyled = styled.div`
   .icon-align {
-    z-index: 2px !important;
+    z-index: 2 !important;
     position: fixed;
     display: flex;
     flex-direction: column;
@@ -17,11 +17,20 @@ const SocialMenuStyled = styled.div`
     height: 260px;
     justify-content: space-around;
     align-items: center;
-    z-index: 1;
     img {
       color: #cacaca;
       height: 80px;
       rotate: 180deg;
+    }
+  }
+  .social-line {
+    width: 1px;
+    height: 80px;
+    background-color: #fff;
+  }
+  @media only screen and (max-width: 991px) {
+    .social-menu {
+      display: none !important;
     }
   }
   @media only screen and (max-width: 768px) {
@@ -34,7 +43,7 @@ const SocialMenuStyled = styled.div`
 export default function SocialMenu() {
   return (
     <SocialMenuStyled>
-      <div className="icon-align">
+      <div className="icon-align social-menu">
         <HeroIcon
           icon={<FaLinkedinIn />}
           link="https://www.linkedin.com/in/moonoz/"
@@ -44,7 +53,8 @@ export default function SocialMenu() {
           icon={<GrInstagram />}
           link="https://www.instagram.com/moonozdisenoz/"
         />
-        <img src={SocialMediaArrow} alt="social media arrow"></img>
+        <div className="social-line"></div>
+        {/* <img src={SocialMediaArrow} alt="social media arrow"></img> */}
       </div>
     </SocialMenuStyled>
   );

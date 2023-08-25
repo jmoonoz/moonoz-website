@@ -30,12 +30,8 @@ export default function NavBar() {
   return (
     <Navbar expand="md" fixed="top" className={scroll ? "scrolled" : ""}>
       <Container fluid>
-        <Navbar.Brand href="/">Moonoz</Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav">
-          {/* <span className="navbar-toggle-icon">
-
-                    </span> */}
-        </Navbar.Toggle>
+        <Navbar.Brand href="/">Joel Munoz</Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav"></Navbar.Toggle>
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
             <div className="vr" />
