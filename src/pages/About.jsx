@@ -8,9 +8,9 @@ const AboutStyled = styled.div``;
 
 export default function About() {
   return (
-    <div>
-      <PageHero heroTitle={"The Person Behind the Profile"} />
-      <AboutStyled></AboutStyled>
-    </div>
+      <div>
+        <PageHero heroTitle={"The Person Behind the Profile"} />
+        <AboutStyled></AboutStyled>
+      </div>
   );
 }

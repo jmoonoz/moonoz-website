@@ -29,14 +29,15 @@ const ProjectsStyle = styled.div`
     .project-search input {
       width: 100%;
     }
-    .project-all-item, .project-search input  {
-        display: flex;
-        grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
-        gap: 3rem;
-        flex-direction: column;
-        align-content: center;
-        justify-content: center;
-        align-items: center;
+    .project-all-item,
+    .project-search input {
+      display: flex;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 3rem;
+      flex-direction: column;
+      align-content: center;
+      justify-content: center;
+      align-items: center;
     }
   }
 `;

@@ -37,7 +37,7 @@ export default function ContactSection() {
   };
 
   return (
-    <section id="contact" className="home-contact">
+    <section id="contact" className="home-contact contact-page-area">
       <Container>
         <Row>
           <Col sm={5} md={5} lg={5}>
@@ -105,7 +105,7 @@ export default function ContactSection() {
         <Row>
         <Col>
             <div className="contact-map">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57763.58882182253!2d55.38442113562169!3d25.195692423227655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f43496ad9c645%3A0xbde66e5084295162!2z4Kam4KeB4Kas4Ka-4KaHIC0g4Kam4KeB4Kas4Ka-4KaHIOCmhuCmruCmv-CmsOCmvuCmpCAtIOCmuOCmguCmr-CngeCmleCnjeCmpCDgpobgprDgpqwg4KaG4Kau4Ka_4Kaw4Ka-4Kak!5e0!3m2!1sbn!2sbd!4v1540725271741" />
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d202260.17787137572!2d-122.23412018239668!3d37.61827101345081!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f9431b601597d%3A0x70474dec26939c0!2sHayward%2C%20CA!5e0!3m2!1sen!2sus!4v1692980535151!5m2!1sen!2sus" />
             </div>
         </Col>
       </Row>
