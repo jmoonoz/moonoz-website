@@ -4,25 +4,12 @@ import ProjectInfo from "../Asset/project";
 import { Container, Form, Row, Col } from "react-bootstrap";
 import styled from "styled-components";
 import PageHero from "../Components/PageHero";
+import { Swiper } from "swiper/react";
+import "swiper/css/grid";
+import { Grid, Pagination } from "swiper/modules";
+import SectionTemplate from "../Components/SectionTemplate";
 
 const ProjectsStyle = styled.div`
-  .project-all-item {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 5rem;
-  }
-  .project-search {
-    position: relative;
-    width: 300px;
-  }
-
-  .project-display {
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: column;
-    gap: 5rem;
-  }
-
   @media only screen and (max-width: 768px) {
     .project-search,
     .project-search form,
@@ -59,27 +46,41 @@ export default function Projects() {
     e.preventDefault();
     setSearchText(e.target.value);
     if (!e.target.value.length > 0) {
-      setProjectsData(ProjectInfo);
+      setProjectData(ProjectInfo);
     }
   };
   return (
-    <div>
-      <PageHero heroTitle={"Dive into My Creative Outputs"} />
-      <ProjectsStyle>
-        <section id="Project-Page" className="page-section">
-          <Container className="project-display">
-            <div className="project-search">
-              <Row>
-                <Form>
-                  <Form.Control
-                    type="text"
-                    value={searchText}
-                    onChange={handleChange}
-                    placeholder="Project Name"
-                  />
-                </Form>
-              </Row>
-            </div>
+    <SectionTemplate idName={"project"}>
+      <PageHero heroTitle="Explore My Creations" />
+      <section id="Project-Page" className="page-section">
+        <Container className="project-display">
+          {/* <div className="section-title-alignment">
+            <span>Projects</span>
+            <h2 className="section-title-center">Explore My Creations</h2>
+          </div> */}
+          <div className="project-search">
+            <Row>
+              <Form>
+                <Form.Control
+                  type="text"
+                  value={searchText}
+                  onChange={handleChange}
+                  placeholder="Project Name"
+                />
+              </Form>
+            </Row>
+          </div>
+          <Swiper
+            slidesPerView={1}
+            grid={
+              {
+                // rows: 2,
+              }
+            }
+            spaceBetween={20}
+            modules={[Grid]}
+            className="mySwiper"
+          >
             <div className="project-all-item">
               {projectData.map((item) => (
                 <CardItem
@@ -90,9 +91,17 @@ export default function Projects() {
                 />
               ))}
             </div>
-          </Container>
-        </section>
-      </ProjectsStyle>
-    </div>
+          </Swiper>
+        </Container>
+      </section>
+    </SectionTemplate>
   );
 }
+
+// <div>
+//   <PageHero heroTitle={"Dive into My Creative Outputs"} />
+//   <ProjectsStyle></ProjectsStyle>
+//   <Container>
+//     <CardItem />
+//   </Container>
+// </div>;

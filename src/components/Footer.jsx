@@ -16,32 +16,25 @@ export default function Footer() {
 
   return (
     <section className="footer-section">
-      <Container>
-        <Row>
-          <Col className="footer-icon" sm={12} md={12} lg={12} xl={12}>
-            <HeroIcon
-              icon={<FaLinkedinIn />}
-              link="https://www.linkedin.com/in/moonoz/"
-            />
-            <HeroIcon
-              icon={<AiFillGithub />}
-              link="https://github.com/jmoonoz"
-            />
-            <HeroIcon
-              icon={<GrInstagram />}
-              link="https://www.instagram.com/moonozdisenoz/"
-            />
-          </Col>
-          <Col sm={12} md={12} lg={12} xl={12}>
-            <div className="footer-sub">
-              <p>
-                <i className="fa fa-copyright"></i>©{year}
-                <span> Developed and Designed by Joel Muñoz</span>
-              </p>
-            </div>
-          </Col>
-        </Row>
-      </Container>
+      <Col className="footer-icon" sm={12} md={12} lg={12} xl={12}>
+        <HeroIcon
+          icon={<FaLinkedinIn />}
+          link="https://www.linkedin.com/in/moonoz/"
+        />
+        <HeroIcon icon={<AiFillGithub />} link="https://github.com/jmoonoz" />
+        <HeroIcon
+          icon={<GrInstagram />}
+          link="https://www.instagram.com/moonozdisenoz/"
+        />
+      </Col>
+      <Col sm={12} md={12} lg={12} xl={12}>
+        <div className="footer-sub">
+          <p>
+            <i className="fa fa-copyright"></i>©{year}
+            <span> Developed and Designed by Joel Muñoz</span>
+          </p>
+        </div>
+      </Col>
     </section>
   );
 }

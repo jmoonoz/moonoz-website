@@ -13,11 +13,20 @@ img {
   max-width: 100%;
 }
 
+body {
+  height: 100vh;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
 /*---------------------------
 	text
 ----------------------------*/
 
 body {
+  background: #000;
   color: #fff;
 }
 
@@ -26,7 +35,9 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+.navbar-brand,
+.navbar-link {
   font-family: "Oswald", sans-serif;
 }
 
@@ -50,6 +61,10 @@ p {
   line-height: 1.7em;
 }
 
+.navbar-brand {
+  font-weight: 700;
+}
+
 
 .footer-section {
   padding-top: 40px;
@@ -63,7 +78,6 @@ p {
   display: flex;
   justify-content: center;
   gap: 10px;
-  /* justify-content: space-evenly; */
 }
 
 .container {
@@ -77,35 +91,73 @@ p {
   margin-bottom: 50px;
   position: relative;
   margin-top: 15px;
+  transition: 50ms ease-in-out;
+}
+
+.section-title:hover {
+  color: rgba(0, 0, 0, 0.0);
+  font-style: italic;
+  -webkit-text-stroke: 1px white;
+  transition: 100ms ease-in-out;
 }
 
 /*---------------------------
 	sections
 ----------------------------*/
 
-@media screen and (min-width: 992px) {
-  /* section {
-    max-height: 850px !important;
-    color: #fff;
-  } */
-  
-
+.section-style .section-Height {
+  height: 100vh;
+  position: relative;
 }
 
+.section-style .section-Height .container {
+  height: 100%;
+  display: flex;
+  vertical-align: middle !important;
+  position: relative;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 2;
+}
+
+.section-style .section-Height .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* hero section */
+
+.hero-Size {
+  height: 100%;
+  max-height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 992px) {}
+
+/* hides scroll bar */
+.section-Center::-webkit-scrollbar {
+  display: none;
+}
+
+@media screen and (min-width: 992px) {}
+
 .home-about,
-.home-contact,
 .Porject-section,
-#Services, .page-section {
+#Services,
+.page-section {
   padding: 100px 0px !important;
 }
 
 .home-about,
-.Porject-section, Body {
+.Porject-section {
   background-color: rgb(23, 23, 23);
 }
 
 .gallery-section,
-.home-contact,
 #Services {
   background-color: rgb(17, 17, 17);
 }
@@ -144,9 +196,6 @@ p {
   border-radius: 20px;
 }
 
-.footer-section {
-  background-color: #202020;
-}
 
 .section-title-alignment {
   display: flex;
@@ -163,7 +212,7 @@ p {
 }
 
 /*---------------------------
-	contact
+	Contact
 ----------------------------*/
 .form-control {
   background-color: #212529;
@@ -192,27 +241,24 @@ p {
 	Contact page
 ----------------------------*/
 
-.contact-page-area .contact-map {
-  height: 450px;
-  margin-top: 60px;
-  cursor: pointer;
-}
+
 .home-contact .contact-map iframe {
   width: 100%;
   height: 100%;
   border: 0;
   outline: 0;
 }
+
 .contact-map {
   -webkit-filter: grayscale(100%);
   -moz-filter: grayscale(100%);
   -ms-filter: grayscale(100%);
   -o-filter: grayscale(100%);
-   filter: grayscale(100%);
+  filter: grayscale(100%);
 }
 
 /*---------------------------
-	portfolio
+	Portfolio
 ----------------------------*/
 
 .tumho-masonary {
@@ -374,7 +420,3 @@ p {
 .gallery-section .section-title {
   margin-bottom: 30px;
 }
-
-
-
-

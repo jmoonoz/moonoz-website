@@ -2,6 +2,7 @@ import React from "react";
 import { Button, Col, Container, Row } from "react-bootstrap";
 import Btn from "./Btn";
 import Slides from "../Images/background2.png";
+import TextLink from "./TextLink";
 import "../Style/hero.css";
 import "../Style/Responsive.css";
 
@@ -26,6 +27,9 @@ export default function Hero() {
                 <Btn variant="outline-danger" text="About Me" link="/About" />
                 <Btn variant="outline-light" text="Hire Me" link="/" />
               </div>
+              {/* <TextLink link="/About" title="About" />
+            <TextLink link="/Project" title="Project" />
+            <TextLink link="/Contact" title="Contact" /> */}
             </Col>
           </Row>
         </Container>
