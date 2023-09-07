@@ -37,7 +37,6 @@
     }
 
     .hero-style-1 .slide {
-        /* background: url('../Images/background2.png') 20% center no-repeat !important; */
         background-size: contain;
     }
 
@@ -116,7 +115,6 @@
     }
 
     .hero-style-1 .slide {
-        /* background: url('../Images/background2.png') 20% center no-repeat !important; */
         background-size: cover;
     }
 

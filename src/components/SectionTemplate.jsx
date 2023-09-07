@@ -7,8 +7,10 @@ export default function SectionTemplate({ idName, children }) {
   return (
     <section id={idName} className="section-style">
       <div className="section-Height">
-        <Container>{children}</Container>
-      <Footer />
+        <Container>
+          {children}
+          <Footer />
+        </Container>
       </div>
     </section>
   );

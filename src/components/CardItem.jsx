@@ -73,10 +73,10 @@ export default function CardItem({
   const handleShow = () => setShow(true);
   return (
     <CardItemStyled>
-      <div class="example" onClick={handleShow}>
+      <div className="example" onClick={handleShow}>
         <img src={Profile} width="400px" height="300px" alt="house" />
-        <div class="fadedbox">
-          <div class="title text"> {title} </div>
+        <div className="fadedbox">
+          <div className="title text"> {title} </div>
         </div>
       </div>
       <Offcanvas show={show} onHide={handleClose}>
@@ -90,18 +90,4 @@ export default function CardItem({
       </Offcanvas>
     </CardItemStyled>
   );
-}
-
-{
-  /* <div class="example">
-  <img
-    src="/uploads/media/default/0001/01/4982c4f43023330a662b9baed5a407e391ae6161.jpeg"
-    width="400"
-    height="300"
-    alt="house"
-  />
-  <div class="fadedbox">
-    <div class="title text"> House </div>
-  </div>
-</div>; */
 }

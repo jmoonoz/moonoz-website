@@ -8,6 +8,7 @@ import { Swiper } from "swiper/react";
 import "swiper/css/grid";
 import { Grid, Pagination } from "swiper/modules";
 import SectionTemplate from "../Components/SectionTemplate";
+import transition from "../transition";
 
 const ProjectsStyle = styled.div`
   @media only screen and (max-width: 768px) {
@@ -29,7 +30,7 @@ const ProjectsStyle = styled.div`
   }
 `;
 
-export default function Projects() {
+function Projects() {
   const [searchText, setSearchText] = useState("");
   const [projectData, setProjectData] = useState(ProjectInfo);
 
@@ -52,7 +53,7 @@ export default function Projects() {
   return (
     <SectionTemplate idName={"project"}>
       <PageHero heroTitle="Explore My Creations" />
-      <section id="Project-Page" className="page-section">
+      <section id="Project-Page">
         <Container className="project-display">
           {/* <div className="section-title-alignment">
             <span>Projects</span>
@@ -98,10 +99,4 @@ export default function Projects() {
   );
 }
 
-// <div>
-//   <PageHero heroTitle={"Dive into My Creative Outputs"} />
-//   <ProjectsStyle></ProjectsStyle>
-//   <Container>
-//     <CardItem />
-//   </Container>
-// </div>;
+export default transition(Projects);
