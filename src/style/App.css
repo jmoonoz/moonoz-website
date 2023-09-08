@@ -15,6 +15,9 @@ img {
 
 body {
   height: 100vh;
+  background-image: url("../Images/background2.png");
+  background-position: center center;
+  background-size: cover;
 }
 
 body::-webkit-scrollbar {

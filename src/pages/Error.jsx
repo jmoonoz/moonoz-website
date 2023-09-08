@@ -5,10 +5,10 @@ import { Button } from 'react-bootstrap'
 
 function Error() {
   return (
-    <SectionTemplate >
+    <SectionTemplate idName={"*"} >
         <PageHero heroTitle='404' />
         <h2>you look a little lost, lets help you find your way back</h2>
-        <Button variant='outline-light' href="/Home">Home</Button>
+        <Button variant='outline-light' href="/">Home</Button>
 
     </SectionTemplate>
     

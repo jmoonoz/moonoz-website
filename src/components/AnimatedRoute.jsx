@@ -4,8 +4,8 @@ import About from "../pages/About";
 import Home from "../pages/Home";
 import Projects from "../pages/Projects";
 import Contact from "../pages/Contact";
+import Error from "../pages/Error";
 import { AnimatePresence } from "framer-motion";
-import Error from "../pages/Error"
 
 function AnimatedRoute() {
   const location = useLocation();
@@ -17,7 +17,7 @@ function AnimatedRoute() {
         <Route path="/Contact" element={<Contact />}></Route>
         <Route path="/About" element={<About />}></Route>
         <Route path="/" element={<Home />}></Route>
-        <Route path="*" element={<Error />} ></Route>
+        <Route path="*" element={<Error />}></Route>
       </Routes>
     </AnimatePresence>
   );
