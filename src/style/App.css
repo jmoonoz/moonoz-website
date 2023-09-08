@@ -67,6 +67,30 @@ p {
   line-height: 1.7em;
 }
 
+/* About */
+
+p span {
+  display: block;
+  opacity: 0;
+  animation: reveal 2s 0ms
+  forwards;
+}
+p span:nth-child(2){
+  animation: reveal 2.01s 250ms
+  forwards;
+}
+
+@keyframes reveal {
+  from {
+    transform: translateX(-100%);
+  }
+  to{
+    transform: none;
+    opacity: 1;
+  }
+  
+}
+
 .navbar-brand {
   font-weight: 700;
 }
