@@ -102,13 +102,7 @@ export default function ContactSection() {
             </Form>
           </Col>
         </Row>
-        {/* <Row>
-        <Col>
-            <div className="contact-map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d202260.17787137572!2d-122.23412018239668!3d37.61827101345081!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f9431b601597d%3A0x70474dec26939c0!2sHayward%2C%20CA!5e0!3m2!1sen!2sus!4v1692980535151!5m2!1sen!2sus" />
-            </div>
-        </Col>
-      </Row> */}
+
       </Container>
     </section>
   );
