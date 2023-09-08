@@ -9,7 +9,7 @@ const transition = (Comp) => {
         initial={{ scaleY: 0 }}
         animate={{ scaleY: 0 }}
         exit={{ scaleY: 1 }}
-        Transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
+        Transition={{ duration: 3, ease: [0.22, 1, 0.36, 1] }}
       />
       <motion.div
         className="slide-Out"

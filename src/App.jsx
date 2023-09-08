@@ -9,13 +9,17 @@ import Footer from "./Components/Footer";
 import AnimatedRoute from "./Components/AnimatedRoute";
 
 function App() {
+  // const location = useLocation();
+
   return (
-    <>
-      <NavBar />
-      <SocialMenu />
-      <AnimatedRoute />
-      {/* <Footer /> */}
-    </>
+    <div className="App">
+      <Router>
+        <NavBar />
+        <SocialMenu />
+        <AnimatedRoute />
+        {/* <Footer /> */}
+      </Router>
+    </div>
   );
 }
 

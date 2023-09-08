@@ -3,7 +3,7 @@
 }
 
 nav {
-  z-index: 5 !important;
+  z-index: 5!important;
 }
 
 nav.navbar {
@@ -84,17 +84,4 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .hvr-underline-from-left:focus:before,
 .hvr-underline-from-left:active:before {
   right: 0;
-}
-
-.navbar-collapse {
-  display: flex;
-  align-items: flex-end;
-  flex-basis: 100%;
-  flex-grow: 1;
-  align-items: center;
-  backdrop-filter: blur(10px);
-  height: 100vh;
-  justify-content: space-evenly;
-  flex-direction: column;
-  flex-wrap: nowrap;
 }

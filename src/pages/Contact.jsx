@@ -10,13 +10,12 @@ import {
 } from "react-bootstrap";
 import emailjs from "@emailjs/browser";
 import SectionTemplate from "../Components/SectionTemplate";
-import transition from "../transition";
 
 const service = import.meta.env.VITE_SERVICE_ID;
 const template = import.meta.env.VITE_TEMPLATE_ID;
 const public_key = import.meta.env.VITE_PUBLIC_ID;
 
-function Contact() {
+export default function Contact() {
   const [validated, setValidated] = useState(false);
 
   const form = useRef();
@@ -107,5 +106,3 @@ function Contact() {
     </SectionTemplate>
   );
 }
-
-export default transition(Contact);
