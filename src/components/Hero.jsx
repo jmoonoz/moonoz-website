@@ -10,9 +10,7 @@ export default function Hero() {
   return (
     <section id="Home" className="hero hero-style-1">
       <div className="slide">
-        <div className="slider-image">
-          <img src={Slides} />
-        </div>
+
         <Container>
           <Row>
             <Col sm={12} md={8} className="slide-caption">

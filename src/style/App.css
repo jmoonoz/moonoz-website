@@ -15,9 +15,12 @@ img {
 
 body {
   height: 100vh;
-  background-image: url("../Images/background2.png");
-  background-position: center center;
-  background-size: cover;
+  background-image: url("../Images/background2.png") !important;
+  background-position: center center !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  background-attachment: fixed !important;
+  overflow: scroll;
 }
 
 body::-webkit-scrollbar {
@@ -109,14 +112,15 @@ p {
 ----------------------------*/
 
 .section-style .section-Height {
+  padding-top: 100px;
   height: 100vh;
-  position: relative;
+  background-attachment: blur(10px);
+  /* position: relative; */
 }
 
 .section-style .section-Height .container {
-  height: 100%;
+  height: 100vh;
   display: flex;
-  vertical-align: middle !important;
   position: relative;
   justify-content: center;
   flex-direction: column;
@@ -127,6 +131,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
+
 }
 
 /* hero section */

@@ -1,30 +1,21 @@
-@media only screen and (min-width: 991px) and (max-width: 1199px) {
+@media only screen and (max-width: 1199px) {
+    .section-style .section-Height {
+        padding-top: 25px;
+      }
 
     .hero-style-1 .slide,
     .hero-style-1 {
         height: auto;
         min-height: auto;
-        max-height: 750px;
     }
+    .section-style .section-Height .row, .section-style .section-Height .container {
+        gap: 30px;
+      }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     .container {
         max-width: 720px;
-    }
-
-    .hero-style-1 .slide,
-    .hero-style-1 {
-        height: auto;
-        min-height: auto;
-        max-height: 404px;
-    }
-
-    .hero-style-1 .slide,
-    .hero-style-1 {
-        height: 100%;
-        min-height: auto;
-        max-height: 403px;
     }
 
     .hero-style-1 {
@@ -67,9 +58,9 @@
 
     .hero-style-1 .slide,
     .hero-style-1 {
-        height: 100%;
+        /* height: 100%;
         min-height: auto;
-        max-height: 360px;
+        max-height: 360px; */
     }
 
     .title-line {
@@ -78,6 +69,7 @@
 
     .container {
         max-width: 540px;
+        padding: 100px 21px;
     }
 
     .slide-caption {
@@ -87,8 +79,7 @@
     }
 
     .hero-style-1 .slide-title h2 {
-        font-size: 34px;
-        margin-bottom: 30px;
+        font-size: 50px;
     }
 
 
@@ -102,7 +93,7 @@
 
 }
 
-@media only screen and (min-width: 576px) and (max-width: 767px) {
+/* @media only screen and (max-width: 767px) {
 
     .hero-style-1 .slide,
     .hero-style-1 {
@@ -112,17 +103,19 @@
     }
 
     .hero-style-1 .slide-title h2 {
-        font-size: 32px;
+        font-size: 40px;
     }
 
     .hero-style-1 .slide {
-        /* background: url('../Images/background2.png') 20% center no-repeat !important; */
+        background: url('../Images/background2.png') 20% center no-repeat !important;
         background-size: cover;
     }
 
-}
+   
 
-@media only screen and (min-width: 480px) and (max-width: 575px) {
+} */
+
+@media only screen and (max-width: 575px) {
 
     .hero-style-1 .slide,
     .hero-style-1 {
@@ -132,17 +125,21 @@
     }
 
     .hero-style-1 .slide-title h2 {
-        font-size: 32px;
+        font-size: 40px;
     }
 
     .hero-style-1 .slide {
         background: url('../Images/background2.png') 20% center no-repeat !important;
         background-size: cover;
     }
+    h2 {
+        font-size: 60px;
+        font-weight: 600;
+    }
 
 }
 
-@media only screen and (min-width: 320px) and (max-width: 479px) {
+@media only screen and (max-width: 479px) {
 
     .hero-style-1 .slide,
     .hero-style-1 {
