@@ -1,10 +1,10 @@
 import React from "react";
 import AboutPhoto from "../Images/Joel-disney.png";
-import PageHero from "../Components/PageHero";
+import PageHero from "../Home/Components/PageHero";
 import { Button, Container, Col, Row } from "react-bootstrap";
-import SectionTemplate from "../Components/SectionTemplate";
+import SectionTemplate from "../Home/Components/SectionTemplate";
 import { motion } from "framer-motion";
-import FadeInLeft from "../Components/FadeInLeft";
+import FadeInLeft from "../Home/Components/FadeInLeft";
 
 export default function About() {
   return (
