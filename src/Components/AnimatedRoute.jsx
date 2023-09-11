@@ -4,7 +4,7 @@ import Home from "../Pages/Home";
 import Projects from "../Pages/Projects";
 import Contact from "../Pages/Contact";
 import Error from "../Pages/Error";
-import About from "../pages/About";
+import About from "../Pages/About";
 import { AnimatePresence } from "framer-motion";
 
 function AnimatedRoute() {
