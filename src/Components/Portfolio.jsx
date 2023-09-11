@@ -1,7 +1,5 @@
 import React, { Component } from "react";
 import { Container, Col, Row } from "react-bootstrap";
-// import Gallery_1 from "../Images/gallery/Img-1.jpg";
-// import Gallery_2 from "../Images/gallery/Img-2.jpg";
 
 export default class Portfolio extends Component {
   state = {

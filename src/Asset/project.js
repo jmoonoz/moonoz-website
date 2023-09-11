@@ -1,4 +1,3 @@
-// import MoonozV2 from "../Images/gallery/profileWebsite.png"
 import { v4 as uuidv4 } from 'uuid';
 import ProImage from "./gallery/profileWebsite.png";
 
