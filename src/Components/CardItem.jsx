@@ -91,17 +91,3 @@ export default function CardItem({
     </CardItemStyled>
   );
 }
-
-{
-  /* <div class="example">
-  <img
-    src="/uploads/media/default/0001/01/4982c4f43023330a662b9baed5a407e391ae6161.jpeg"
-    width="400"
-    height="300"
-    alt="house"
-  />
-  <div class="fadedbox">
-    <div class="title text"> House </div>
-  </div>
-</div>; */
-}

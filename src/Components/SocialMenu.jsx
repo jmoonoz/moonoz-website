@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import HeroIcon from "./HeroIcon";
-import SocialMediaArrow from "../images/social-media-arrow.svg";
 import { FaLinkedinIn } from "react-icons/fa";
 import { GrInstagram } from "react-icons/gr";
 import { AiFillGithub } from "react-icons/ai";
@@ -54,7 +53,6 @@ export default function SocialMenu() {
           link="https://www.instagram.com/moonozdisenoz/"
         />
         <div className="social-line"></div>
-        {/* <img src={SocialMediaArrow} alt="social media arrow"></img> */}
       </div>
     </SocialMenuStyled>
   );
