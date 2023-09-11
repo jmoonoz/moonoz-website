@@ -69,7 +69,7 @@ p {
 
 /* About */
 
-p span {
+/* p span {
   display: block;
   opacity: 0;
   animation: reveal 2s 0ms
@@ -78,7 +78,7 @@ p span {
 p span:nth-child(2){
   animation: reveal 2.01s 250ms
   forwards;
-}
+} */
 
 @keyframes reveal {
   from {
@@ -133,6 +133,10 @@ p span:nth-child(2){
 /*---------------------------
 	sections
 ----------------------------*/
+.section-style{
+  transition: 100ms ease-in;
+  overflow: hidden;
+}
 
 .section-style .section-Height {
   padding-top: 100px;
@@ -236,10 +240,11 @@ p span:nth-child(2){
   justify-content: space-evenly;
   align-items: center;
 
-  span {
-    font-size: 14px;
-    color: #ffffffbd;
-  }
+  
+}
+.section-title-alignment span {
+  font-size: 14px;
+  color: #ffffffbd;
 }
 
 .error-Col {

@@ -53,10 +53,9 @@
   align-items: center;
 }
 
-.slide-subtitle:hover {
-  .title-line {
+.slide-subtitle .title-line:hover {
+
     margin-left: 30px;
-  }
 }
 .btn-alignment{
   gap: 20px;
