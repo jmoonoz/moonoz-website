@@ -3,8 +3,8 @@ import { Button, Col, Container, Row } from "react-bootstrap";
 import Btn from "./Btn";
 // import Slides from "../Images/background2.png";
 // import TextLink from "./TextLink";
-import "../Style/hero.css";
-import "../Style/Responsive.css";
+import "../style/hero.css";
+import "../style/Responsive.css";
 
 export default function Hero() {
   return (
