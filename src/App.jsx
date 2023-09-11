@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { BrowserRouter as Router } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
-// import "./Style/App.css";
 import "./style/App.css"
 import "./style/Responsive.css";
 import SocialMenu from "./Components/SocialMenu";

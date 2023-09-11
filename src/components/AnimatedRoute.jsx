@@ -1,10 +1,10 @@
 import React from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
+import Home from "../Pages/Home";
+import Projects from "../Pages/Projects";
+import Contact from "../Pages/Contact";
+import Error from "../Pages/Error";
 import About from "../pages/About";
-import Home from "../pages/Home";
-import Projects from "../pages/Projects";
-import Contact from "../pages/Contact";
-import Error from "../pages/Error";
 import { AnimatePresence } from "framer-motion";
 
 function AnimatedRoute() {
