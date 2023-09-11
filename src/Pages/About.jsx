@@ -1,7 +1,7 @@
 import React from "react";
 import AboutPhoto from "../Images/Joel-disney.png";
 import PageHero from "../Components/PageHero";
-import { Button, Col, Row } from "react-bootstrap";
+import { Button, Container, Col, Row } from "react-bootstrap";
 import SectionTemplate from "../Components/SectionTemplate";
 import { motion } from "framer-motion";
 import FadeInLeft from "../Components/FadeInLeft";
@@ -29,10 +29,10 @@ export default function About() {
               </FadeInLeft>
             </p>
             <motion.p
-            key="wait"
-              initial={{ x: "-100%" , opacity: 0.5 }}
-              animate={{ x: 0, opacity: 1 }}
-              exit={{ x: "-100$", opacity: 0 }}
+              key="wait"
+              initial={{ x: "-100%"}}
+              animate={{ x: 0}}
+              exit={{ x: "-300" }}
               transition={{ duration: 2 }}
             >
               There isn't anything embarrassing hidden in the middle of text.
@@ -46,6 +46,10 @@ export default function About() {
         </Col>
         <Col className="col-img" lg={5} xl={5}>
           <motion.div
+            initial={{ x: "300%" }}
+            animate={{ x: 0 }}
+            exit={{ x: "300" }}
+            transition={{ duration: 1 }}
             whileHover={{ scale: 1 }}
             whileTap={{ scale: 0.9 }}
             className="hx-about-img"
