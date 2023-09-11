@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Col, Row } from "react-bootstrap";
 import Slides from "../Images/background2.png";
-import Footer from "../Components/Footer";
+import Footer from "./Footer";
 import { AnimatePresence } from "framer-motion";
 
 export default function SectionTemplate({ idName, children }) {
