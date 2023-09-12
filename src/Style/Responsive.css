@@ -3,11 +3,7 @@
         padding-top: 25px;
       }
 
-    .hero-style-1 .slide,
-    .hero-style-1 {
-        height: auto;
-        min-height: auto;
-    }
+
     .section-style .section-Height .row, .section-style .section-Height .container {
         gap: 30px;
       }
@@ -18,10 +14,10 @@
         max-width: 720px;
     }
 
-    .hero-style-1 {
+    /* .hero-style-1 {
         height: auto;
         min-height: auto;
-    }
+    } */
 
     .hero .slide-caption {
         padding: 120px 0;
@@ -36,6 +32,9 @@
 
 /* for smaller screens */
 @media only screen and (max-width:767px) {
+    body{
+        background-image: url("../Images/small-background.jpg") !important;
+    }
     p {
         font-size: 14px;
     }
@@ -55,12 +54,6 @@
         background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255, 255, 255, 0.55)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
     }
 
-    .hero-style-1 .slide,
-    .hero-style-1 {
-        /* height: 100%;
-        min-height: auto;
-        max-height: 360px; */
-    }
 
     .title-line {
         display: none;
@@ -89,17 +82,22 @@
     .gallery-section {
         padding: 60px 0 40px;
     }
+    .section-style .section-Height{
+        padding-top: 300px;
+    }
 
 }
 
 
 @media only screen and (max-width: 575px) {
+    body{
+        background-image: url("../Images/small-background.jpg") !important;
+    }
 
     .hero-style-1 .slide,
     .hero-style-1 {
         height: 100%;
         min-height: auto;
-        max-height: 320px;
     }
 
     .hero-style-1 .slide-title h2 {
@@ -118,6 +116,9 @@
 }
 
 @media only screen and (max-width: 479px) {
+    body{
+        background-image: url("../Images/small-background.jpg") !important;
+    }
 
     .hero-style-1 .slide,
     .hero-style-1 {
