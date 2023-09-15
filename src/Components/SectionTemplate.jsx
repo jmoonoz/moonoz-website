@@ -12,8 +12,8 @@ export default function SectionTemplate({ idName, children }) {
             key="wait"
             initial={{ opacity: 0.5 }}
             animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 1 }}
+            exit={{ opacity: 0.5 }}
+            transition={{ duration: 2 }}
           >
             <Container>
               {children}

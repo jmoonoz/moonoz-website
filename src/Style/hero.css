@@ -19,7 +19,6 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* position: relative; */
   z-index: 2;
 }
 
@@ -99,6 +98,12 @@
   -moz-animation-delay: 1s;
   -webkit-animation-delay: .75s;
   animation-delay: .5s;
+}
+
+.animation-dur{
+  animation-fill-mode: both;
+  animation-duration: 1.5s;
+  -o-animation-duration: 1.5s;
 }
 
 .btn-alignment {

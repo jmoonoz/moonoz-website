@@ -3,16 +3,17 @@ import { motion, motionValue } from "framer-motion";
 
 // Sec = seconds
 
-function FadeInLeft({ seconds }) {
-//   const sec = motionValue(seconds);
+function FadeInLeft({ seconds, children }) {
+  // const seconds = motionValue(sec);
+
   return (
     <motion.div
-      initial={{ x: -300, opacity: 0 }}
-      animate={{ x: 0, opacity: 1 }}
-      exit={{ x: -300, opacity: 0 }}
-      transition={{ duration: { seconds } }}
+      initial={{ x: "-200%", opacity: 0 }}
+      animate={{ x: 0, opacity: seconds }}
+      exit={{ x: "200%", opacity: 0 }}
+      transition={{ duration: seconds }}
     >
-      FadeInLeft
+      {children}
     </motion.div>
   );
 }
