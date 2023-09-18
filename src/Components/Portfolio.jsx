@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Container, Col, Row } from "react-bootstrap";
+import Gallery_1 from "../Asset/gallery/img-1.jpg"
 
 export default class Portfolio extends Component {
   state = {
@@ -40,7 +41,7 @@ export default class Portfolio extends Component {
       <section id="portfolio" className="gallery-section">
         <Container>
           <Row>
-            <Col xs={12} className="sortable-gallery">
+            <Col xs={12}>
               <div className="gallery-filters">
                 <div className="section-title">
                   <span>Portfolio</span>

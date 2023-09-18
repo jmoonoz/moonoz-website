@@ -6,6 +6,7 @@ import styled from "styled-components";
 import PageHero from "../Components/PageHero";
 import { Swiper } from "swiper/react";
 import "swiper/css/grid";
+import Portfolio from "../Components/Portfolio"
 import { Grid, Pagination } from "swiper/modules";
 import SectionTemplate from "../Components/SectionTemplate";
 
@@ -52,12 +53,12 @@ export default function Projects() {
   return (
     <SectionTemplate idName={"project"}>
       <PageHero heroTitle="Explore My Creations" />
-      <section id="Project-Page" className="page-section">
+      {/* <section id="Project-Page" className="page-section">
         <Container className="project-display">
-          {/* <div className="section-title-alignment">
+          <div className="section-title-alignment">
             <span>Projects</span>
             <h2 className="section-title-center">Explore My Creations</h2>
-          </div> */}
+          </div>
           <div className="project-search">
             <Row>
               <Form>
@@ -93,7 +94,8 @@ export default function Projects() {
             </div>
           </Swiper>
         </Container>
-      </section>
+      </section> */}
+      <Portfolio />
     </SectionTemplate>
   );
 }

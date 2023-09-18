@@ -3,23 +3,23 @@ import { Container, Col, Row } from "react-bootstrap";
 import Footer from "./Footer";
 import { AnimatePresence, motion } from "framer-motion";
 
+
 export default function SectionTemplate({ idName, children }) {
   return (
     <AnimatePresence>
       <section id={idName} className="section-style">
         <div className="section-Height">
-          <motion.div
-            key="wait"
-            initial={{ opacity: 0.5 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0.5 }}
-            transition={{ duration: 2 }}
-          >
-            <Container>
+          <Container>
+            <motion.div
+              initial="hidden"
+              animate="show"
+              exit="hidden"
+              transition={{ delayChildren: .2, staggerChildren: 0.2 }}
+            >
               {children}
               <Footer />
-            </Container>
-          </motion.div>
+            </motion.div>
+          </Container>
         </div>
       </section>
     </AnimatePresence>

@@ -139,7 +139,7 @@ p {
 }
 
 .section-style .section-Height .container {
-  /* height: 100vh; */
+
   display: flex;
   /* position: relative; */
   padding-top: 5%;
@@ -184,20 +184,11 @@ p {
 
 .home-about,
 .Porject-section,
-#Services,
-.page-section {
+#Services{
   padding: 100px 0px !important;
 }
 
-.home-about,
-.Porject-section {
-  background-color: rgb(23, 23, 23);
-}
 
-.gallery-section,
-#Services {
-  background-color: rgb(17, 17, 17);
-}
 
 .hx-about-img {
   padding: 15px;
@@ -208,10 +199,10 @@ p {
   padding-right: 0px !important;
 }
 
-.hx-site-title {
+/* .hx-site-title {
   display: flexbox;
   justify-content: space-between;
-}
+} */
 
 .hx-about-content {
   display: flex;

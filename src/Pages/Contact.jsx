@@ -11,7 +11,11 @@ import {
 import emailjs from "@emailjs/browser";
 import SectionTemplate from "../Components/SectionTemplate";
 import { motion } from "framer-motion";
-import SlideIn from "../Components/slideIn";
+import {
+  slideInLeft,
+  slideInRight,
+  slideUp,
+} from "../animation";
 
 const service = import.meta.env.VITE_SERVICE_ID;
 const template = import.meta.env.VITE_TEMPLATE_ID;
@@ -43,23 +47,25 @@ export default function Contact() {
   return (
     <SectionTemplate idName={"contact"}>
       <PageHero heroTitle={"Reach Me Here"} />
-      <Row >
+      <motion.div
+        className="row"
+      >
         <Col sm={9} md={9} lg={9} className="col-hidden">
           <Form ref={form} onSubmit={sendEmail}>
             <Row>
               <Col sm={6} md={6} lg={6} xl={6}>
-                <Form.Group>
-                    <Form.Label>First Name:</Form.Label>
-                    <Form.Control
-                      required
-                      type="text"
-                      placeholder="Ex: Joel"
-                      name="first"
-                    />
-                </Form.Group>
+                <motion.div variants={slideInLeft}>
+                  <Form.Label>First Name:</Form.Label>
+                  <Form.Control
+                    required
+                    type="text"
+                    placeholder="Ex: Joel"
+                    name="first"
+                  />
+                </motion.div>
               </Col>
               <Col sm={6} md={6} lg={6} xl={6}>
-                <Form.Group>
+                <motion.div variants={slideInRight}>
                   <Form.Label>Last Name:</Form.Label>
                   <Form.Control
                     required
@@ -67,10 +73,10 @@ export default function Contact() {
                     placeholder="Munoz"
                     name="last"
                   />
-                </Form.Group>
+                </motion.div>
               </Col>
             </Row>
-            <Form.Group>
+            <motion.div variants={slideInLeft}>
               <Form.Label>Email:</Form.Label>
               <Form.Control
                 required
@@ -78,26 +84,28 @@ export default function Contact() {
                 placeholder="Example@email.com"
                 name="email"
               />
-            </Form.Group>
-            <Form.Label>Message:</Form.Label>
-            <Form.Control
-              required
-              as="textarea"
-              placeholder="Write to me"
-              style={{ height: "200px" }}
-              name="message"
-            />
-            <Form.Text id="emailJS-mention" muted>
-              Powered by EmailJS
-            </Form.Text>
-            <div className="form-button">
-              <Button variant="outline-light" type="submit">
-                Submit
-              </Button>
-            </div>
+            </motion.div>
+            <motion.div variants={slideUp}>
+              <Form.Label>Message:</Form.Label>
+              <Form.Control
+                required
+                as="textarea"
+                placeholder="Write to me"
+                style={{ height: "200px" }}
+                name="message"
+              />
+              <Form.Text id="emailJS-mention" muted>
+                Powered by EmailJS
+              </Form.Text>
+              <div className="form-button">
+                <Button variant="outline-light" type="submit">
+                  Submit
+                </Button>
+              </div>
+            </motion.div>
           </Form>
         </Col>
-      </Row>
+      </motion.div>
     </SectionTemplate>
   );
 }
