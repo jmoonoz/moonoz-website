@@ -3,7 +3,7 @@
 }
 
 nav {
-  z-index: 5!important;
+  z-index: 5 !important;
 }
 
 nav.navbar {
@@ -84,4 +84,18 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .hvr-underline-from-left:focus:before,
 .hvr-underline-from-left:active:before {
   right: 0;
+}
+
+.navbar-collapse {
+  display: flex;
+}
+
+@media only screen and (max-width: 575) {
+  .vr {
+    display: hidden;
+  }
+  .hvr-underline-from-left{
+    font-size: 30px;
+  }
+
 }

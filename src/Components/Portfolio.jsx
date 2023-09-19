@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Container, Col, Row } from "react-bootstrap";
 import Gallery_1 from "../Asset/gallery/img-1.jpg"
+import "../Style/Projects.css"
 
 export default class Portfolio extends Component {
   state = {
@@ -43,10 +44,10 @@ export default class Portfolio extends Component {
           <Row>
             <Col xs={12}>
               <div className="gallery-filters">
-                <div className="section-title">
+                {/* <div className="section-title">
                   <span>Portfolio</span>
                   <h2>Work I Have Done</h2>
-                </div>
+                </div> */}
                 <ul>
                   <li>
                     <a
@@ -87,11 +88,7 @@ export default class Portfolio extends Component {
                   }
                 >
                   <img src={Gallery_1} className="img img-responsive" alt="" />
-                  <div className="icon">
-                    {/* <a href="#" className="view-icon">
-                      <FontAwesomeIcon icon={faPlus} />
-                    </a> */}
-                  </div>
+
                 </div>
                 <div
                   className={

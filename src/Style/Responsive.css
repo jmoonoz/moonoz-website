@@ -1,12 +1,13 @@
 @media only screen and (max-width: 1199px) {
     .section-style .section-Height {
         padding-top: 25px;
-      }
+    }
 
 
-    .section-style .section-Height .row, .section-style .section-Height .container {
+    .section-style .section-Height .row,
+    .section-style .section-Height .container {
         gap: 30px;
-      }
+    }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -32,9 +33,10 @@
 
 /* for smaller screens */
 @media only screen and (max-width:767px) {
-    body{
+    body {
         background-image: url("../Images/small-background.jpg") !important;
     }
+
     p {
         font-size: 14px;
     }
@@ -79,18 +81,20 @@
     h4 {
         font-size: 0.93333rem;
     }
+
     .gallery-section {
         padding: 60px 0 40px;
     }
-    .section-style .section-Height{
-        padding-top: 300px;
+
+    .section-style .section-Height {
+        padding-top: 80px;
     }
 
 }
 
 
 @media only screen and (max-width: 575px) {
-    body{
+    body {
         background-image: url("../Images/small-background.jpg") !important;
     }
 
@@ -108,15 +112,16 @@
         background: url('../Images/background2.png') 20% center no-repeat !important;
         background-size: cover;
     }
+
     h2 {
-        font-size: 60px;
+        font-size: 54px;
         font-weight: 600;
     }
 
 }
 
 @media only screen and (max-width: 479px) {
-    body{
+    body {
         background-image: url("../Images/small-background.jpg") !important;
     }
 
@@ -133,6 +138,14 @@
     .hero-style-1 .slide {
         background: url('../Images/background2.png') 20% center no-repeat !important;
         background-size: cover;
+    }
+
+    .section-Height {
+        padding-top: 10px;
+    }
+
+    .hero-size {
+        height: auto !important;
     }
 
 }
