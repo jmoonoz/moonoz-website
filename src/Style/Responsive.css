@@ -120,7 +120,7 @@
 
 }
 
-@media only screen and (max-width: 479px) {
+@media only screen and (min-width:100px  ) and (max-width: 479px) {
     body {
         background-image: url("../Images/small-background.jpg") !important;
     }

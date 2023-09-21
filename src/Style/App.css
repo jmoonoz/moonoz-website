@@ -136,6 +136,7 @@ p {
   height: 100vh;
   overflow: scroll;
   backdrop-filter: blur(10px) !important;
+  -webkit-backdrop-filter: blur(10px) !important;
   /* position: relative; */
 }
 
