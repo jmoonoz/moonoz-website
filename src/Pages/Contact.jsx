@@ -11,11 +11,7 @@ import {
 import emailjs from "@emailjs/browser";
 import SectionTemplate from "../Components/SectionTemplate";
 import { motion } from "framer-motion";
-import {
-  slideInLeft,
-  slideInRight,
-  slideUp,
-} from "../animation";
+import { slideInLeft, slideInRight, slideUp } from "../animation";
 
 const service = import.meta.env.VITE_SERVICE_ID;
 const template = import.meta.env.VITE_TEMPLATE_ID;
@@ -47,13 +43,11 @@ export default function Contact() {
   return (
     <SectionTemplate idName={"contact"}>
       <PageHero heroTitle={"Reach Me Here"} />
-      <motion.div
-        className="row"
-      >
+      <Row>
         <Col sm={9} md={9} lg={9} className="col-hidden">
           <Form ref={form} onSubmit={sendEmail}>
             <Row>
-              <Col sm={6} md={6} lg={6} xl={6}>
+              <Col sm={12} md={6} lg={6} xl={6}>
                 <motion.div variants={slideInLeft}>
                   <Form.Label>First Name:</Form.Label>
                   <Form.Control
@@ -64,7 +58,7 @@ export default function Contact() {
                   />
                 </motion.div>
               </Col>
-              <Col sm={6} md={6} lg={6} xl={6}>
+              <Col sm={12} md={6} lg={6} xl={6}>
                 <motion.div variants={slideInRight}>
                   <Form.Label>Last Name:</Form.Label>
                   <Form.Control
@@ -76,6 +70,8 @@ export default function Contact() {
                 </motion.div>
               </Col>
             </Row>
+            {/* <Row>
+            </Row> */}
             <motion.div variants={slideInLeft}>
               <Form.Label>Email:</Form.Label>
               <Form.Control
@@ -105,7 +101,7 @@ export default function Contact() {
             </motion.div>
           </Form>
         </Col>
-      </motion.div>
+      </Row>
     </SectionTemplate>
   );
 }

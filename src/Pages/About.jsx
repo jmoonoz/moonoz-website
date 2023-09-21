@@ -14,27 +14,27 @@ export default function About() {
         <Col xl={6} lg={6} className="hx-about-content col-hidden">
           <div className="col-about">
             <div className="hx-site-title">
-              <motion.span variants={slideInLeft}>
-                Expert Web Developer & Designer
-              </motion.span>
               <motion.div variants={slideInLeft}>
+                <span>Expert Web Developer & Designer</span>
                 <h2 className="section-title">Get to Know Me</h2>
               </motion.div>
             </div>
-            <motion.p variants={slideInLeft}>
-              There are many variations of passages of Lorem Ipsum available,
-              but the majority have suffered alteration in some form, by
-              injected humour, or randomised words which don't look even
-              slightly believable. If you are going to use a passage of Lorem
-              Ipsum by injected humour, or randomised words which don't look
-              even slightly believable. If you are going to use a passage of
-              Lorem Ipsum
-            </motion.p>
-            <motion.p variants={slideInLeft}>
-              There isn't anything embarrassing hidden in the middle of text.
-              All the Lorem Ipsum generators on the Internet tend to repeat
-              predefined chunks as necessary you need to be sure
-            </motion.p>
+            <motion.div variants={slideInLeft}>
+              <p>
+                There are many variations of passages of Lorem Ipsum available,
+                but the majority have suffered alteration in some form, by
+                injected humour, or randomised words which don't look even
+                slightly believable. If you are going to use a passage of Lorem
+                Ipsum by injected humour, or randomised words which don't look
+                even slightly believable. If you are going to use a passage of
+                Lorem Ipsum
+              </p>
+              <p>
+                There isn't anything embarrassing hidden in the middle of text.
+                All the Lorem Ipsum generators on the Internet tend to repeat
+                predefined chunks as necessary you need to be sure
+              </p>
+            </motion.div>
             <motion.div variants={slideInLeft} className="btns">
               <Button variant="outline-light">Download CV</Button>
             </motion.div>

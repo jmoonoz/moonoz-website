@@ -6,7 +6,6 @@ import { AnimatePresence, motion } from "framer-motion";
 
 export default function SectionTemplate({ idName, children }) {
   return (
-    <AnimatePresence>
       <section id={idName} className="section-style">
         <div className="section-Height">
           <Container>
@@ -14,7 +13,7 @@ export default function SectionTemplate({ idName, children }) {
               initial="hidden"
               animate="show"
               exit="hidden"
-              transition={{ delayChildren: .2, staggerChildren: 0.2 }}
+              transition={{ delayChildren: .2, staggerChildren: 0.2, duration: 3 }}
             >
               {children}
               <Footer />
@@ -22,6 +21,5 @@ export default function SectionTemplate({ idName, children }) {
           </Container>
         </div>
       </section>
-    </AnimatePresence>
   );
 }

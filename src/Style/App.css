@@ -15,12 +15,13 @@ img {
 
 body {
   height: 100vh;
-  background-image: url("../Images/background2.png") !important;
+  background-image: url("../Images/largeBackground.png") !important;
   background-position: center center !important;
   background-size: cover !important;
   background-repeat: no-repeat !important;
   background-attachment: fixed !important;
   overflow: scroll;
+  /* backdrop-filter: blur(5px); */
 }
 
 body::-webkit-scrollbar,
